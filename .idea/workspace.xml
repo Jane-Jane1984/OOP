@@ -20,7 +20,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1kVz2oBKUUffaFFUsqqzXerfDXQ" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -31,6 +31,8 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -42,6 +44,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605800342053</updated>
       <workItem from="1605800343431" duration="9746000" />
+      <workItem from="1606119153092" duration="3645000" />
     </task>
     <servers />
   </component>
@@ -58,11 +61,16 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="785" y="717" key="NewPhpFileDialog" timestamp="1605807872996">
+    <state x="785" y="717" key="NewPhpFileDialog" timestamp="1606121594975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="717" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1605807872996" />
+    <state x="785" y="717" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606121594975" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1606119293276">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606119293276" />
   </component>
 </project>
