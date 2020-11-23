@@ -41,7 +41,14 @@ class Rectangle
 }
 $rec = new Rectangle();
 
-echo $rec->getSquare(5, 2);
+echo 'Площадь данного прямоугольника равна ' . $rec->getSquare(5, 40) . 'см.';
 echo '<br>';
-echo $rec->getPerimetr(3, 4);
+echo 'Периметр данного прямоугольника равен ' . $rec->getPerimetr(30, 4) . ' см.';
+echo '</br>';
+
+$h = 8;
+$w = 4;
+echo 'Площадь данного прямоугольника равна ' . $rec->getSquare($h, $w) . 'см.';
+echo '<br>';
+echo 'Периметр данного прямоугольника равен ' . $rec->getPerimetr($h, $w) . ' см.';
 
