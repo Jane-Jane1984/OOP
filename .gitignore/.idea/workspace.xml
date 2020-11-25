@@ -44,7 +44,8 @@
       <option name="presentableId" value="Default" />
       <updated>1605800342053</updated>
       <workItem from="1605800343431" duration="9746000" />
-      <workItem from="1606119153092" duration="3946000" />
+      <workItem from="1606119153092" duration="4265000" />
+      <workItem from="1606320837010" duration="110000" />
     </task>
     <servers />
   </component>
@@ -64,6 +65,10 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1606320946100">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606320946100" />
     <state x="785" y="717" key="NewPhpFileDialog" timestamp="1606121594975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
