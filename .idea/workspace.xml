@@ -43,17 +43,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1605800342053</updated>
-<<<<<<< HEAD
-      <workItem from="1605800343431" duration="10253000" />
-=======
       <workItem from="1605800343431" duration="9746000" />
-<<<<<<< HEAD:.gitignore/.idea/workspace.xml
       <workItem from="1606119153092" duration="4265000" />
       <workItem from="1606320837010" duration="110000" />
-=======
-      <workItem from="1606119153092" duration="3946000" />
->>>>>>> 5212cd735212efa1beb705c0fc89fb11f912970e
->>>>>>> 84a78c16be4c7813b89683acade6c214fe557c33:.idea/workspace.xml
+      <workItem from="1606320949201" duration="2799000" />
+      <workItem from="1606401977755" duration="636000" />
     </task>
     <servers />
   </component>
@@ -77,6 +71,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606320946100" />
+    <state x="787" y="243" key="NewPhpClassDialog" timestamp="1606321427822">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="787" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606321427822" />
     <state x="785" y="717" key="NewPhpFileDialog" timestamp="1606121594975">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
