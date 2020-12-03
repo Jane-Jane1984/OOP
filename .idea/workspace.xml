@@ -51,7 +51,8 @@
       <workItem from="1606407962283" duration="156000" />
       <workItem from="1606408120845" duration="5578000" />
       <workItem from="1606750442391" duration="143000" />
-      <workItem from="1606750593248" duration="8846000" />
+      <workItem from="1606750593248" duration="8848000" />
+      <workItem from="1607010119817" duration="7451000" />
     </task>
     <servers />
   </component>
@@ -75,17 +76,21 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1606750588849" />
-    <state x="787" y="243" key="NewPhpClassDialog" timestamp="1606755225316">
+    <state x="787" y="243" key="NewPhpClassDialog" timestamp="1607018120818">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="787" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606755225316" />
-    <state x="785" y="717" key="NewPhpFileDialog" timestamp="1606406714547">
+    <state x="787" y="243" key="NewPhpClassDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607018120818" />
+    <state x="785" y="717" key="NewPhpFileDialog" timestamp="1607017666377">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="785" y="717" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1606406714547" />
+    <state x="785" y="717" key="NewPhpFileDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1607017666377" />
     <state x="461" y="165" key="SettingsEditor" timestamp="1606119293276">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1606119293276" />
+    <state x="1252" y="239" width="585" height="801" key="find.popup" timestamp="1607012326074">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1252" y="239" width="585" height="801" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1607012326074" />
   </component>
 </project>

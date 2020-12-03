@@ -31,16 +31,19 @@ class Text extends Input
     {
         $this->placeholder = $placeholder;
     }
-}
 
-/**
- * Создать класс Text , который будет строить на странице
-textbox, унаследовать класс Input. Добавить к классу
-Text private-поле placeholder, метод getPlaceholder(),
-который не принимает в качестве параметров ничего и возвращает значение поля placeholder, метод
-setPlaceholder(), который принимает в качестве параметра строку и записывает ее в поле placeholder, и
-конструктор, принимающий в качестве параметров
-_background, _width, _height, _name, _value, _placeholder
-и вызывает соответствующие методы для заполнения
-параметров поля
- */
+    public function convertToHtml()
+    {
+
+        $str = '';
+        $str .= '<input type="text" ';
+        $str .= 'name="' . $this->getName().'" ';
+        $str .= 'value="' . $this->getValue().'" ';
+        $str .= 'placeholder="'.$this->getPlaceholder().'" ';
+        $str .= 'style="background: '.$this->getBackground().'; height: '.$this->getHeight().'px; width: '.$this->getWidth().'px;"/>';
+
+        return $str;
+
+    }
+
+}
