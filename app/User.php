@@ -1,17 +1,16 @@
 <?php
+namespace app;
 //Класс как заготовка
 class User
 {
-    //public $name;
+
     private $name;
     private $age;
 
-//    public function __construct($n, $a)
-//    {
-//        $this->age = $a;
-//        $this->name = $n;
-//    }
-
+    public function __construct()
+    {
+        echo "Я нахожусь в пространстве имён app";
+    }
     /**
      * @return mixed
      */
@@ -48,13 +47,4 @@ class User
     }
 }
 
-$man = new User;
 
-//1//$man->name = 'Poll';
-//$man->age = '18';
-var_dump($man);
-
-$man->setAge(25);
-$man->setName('Poll');
-echo '<br>';
-echo 'My name is ' . $man->getName() . " age " . $man->getAge() . ' years old';

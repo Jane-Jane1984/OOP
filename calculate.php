@@ -24,7 +24,7 @@ class Calculate
 
     public static function device($a, $b)
     {
-        if($b = 0){
+        if($b == 0){
             return "Деление на ноль запрещено";
         }else{
             return $a / $b;

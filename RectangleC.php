@@ -1,7 +1,7 @@
 <?php
 
 
-class RectangleC extends Point
+class RectangleC extends Point implements PointInterface
 {
     private $w;  //width
     private $h;  //height

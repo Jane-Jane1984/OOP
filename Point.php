@@ -1,7 +1,6 @@
 <?php
 
-
-abstract class Point
+class Point
 {
     protected $x;
     protected $y;
@@ -17,7 +16,8 @@ abstract class Point
         echo 'x = ' . $this->x . ' y = ' . $this->y;
     }
 
-    abstract public function area(); // в данном классе этот метод не будет реализован, но будет перезаписан в наследниках
 
-    abstract public function perimeter();
+    //abstract public function area(); // в данном классе этот метод не будет реализован, но будет перезаписан в наследниках
+
+    //abstract public function perimeter(); //еренесли абстрактные методы v pointInterface
 }
