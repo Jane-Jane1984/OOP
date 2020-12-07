@@ -1,7 +1,7 @@
 <?php
 
 
-abstract class Input extends Control
+class Input extends Control
 {
     private $name;
     private $value;
@@ -38,6 +38,6 @@ abstract class Input extends Control
         $this->value = $value;
     }
 
-    abstract public function convertToHtml();
+    //public function convertToHtml();
 
 }
