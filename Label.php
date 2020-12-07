@@ -27,8 +27,21 @@ class Label extends Input
         $this->for = $obj->getName();
     }
 
+    public function convertToHtml()
+    {
+        $type = $this->isSubmit ? 'submit' : 'button';
+        $str = '';
+        $str .= '<input type="' . $type . '" ';
+        $str .= 'name="' . $this->getName().'" ';
+        $str .= 'value="' . $this->getValue().'" ';
+        $str .= 'style="background: '.$this->getBackground().'; height: '.$this->getHeight().'px; width: '.$this->getWidth().'px;"/>';
+
+        return $str;
+
+    }
 
 }
+
 
 /**
  * Создать класс Label , который будет добавлять label

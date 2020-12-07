@@ -63,9 +63,9 @@ class Child extends Parents
 $obj2 = new Child('12345', 1, 2, 3);
 //echo $obj2->getProp();
 
-//var_dump($obj2);
+var_dump($obj2);
 
-echo $obj2->getParentShow();
+//echo $obj2->getParentShow();
 
 //$obj3 = new Child2(); //внук
 //echo '<br>';
