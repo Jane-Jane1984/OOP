@@ -3,30 +3,21 @@
 
 class Menu
 {
-    private $listItems = [];
+    protected $listItems = [];
 
-    /**
-     * @return array
-     */
-    public function getListItems()
-    {
-        return $this->listItems;
-    }
-
-    /**
-     * @param array $listItems
-     */
-    public function setListItems($listItems)
-    {
-        $this->listItems = $listItems;
-    }
 
     public function PrintMenu($width, $height, $backgroundColor, $color)
     {
-       $style = '';
-       $style = "'style = width: ' . $width . 'px; height: ' . $height . 'px; background-color: ' . $backgroundColor . '; color: ' . $color;";
+       $style = 'display: inline-block; text-align; center; ';
+       $style .= "'style = width: ' . $width . 'px; height: ' . $height . 'px; background-color: ' . $backgroundColor . '; color: ' . $color;";
        return $style;
+
+       foreach ($this->listItems as $objItem)
+       {
+            echo '<a href="' . $objItem->url'". style."'
+       }
     }
+
 
     public function AddMenuItem($name, $url)
     {

@@ -1,7 +1,7 @@
 <?php
 
-//require_once 'Control.php';  //усли нет автозагрузки, первым подключается класс родителя
-
+//require_once 'Control.php';  //усли нет автозагрузки, первым подключается класс родителя, с автозагрузкой эти подключения не нужны, кроме use
+//
 //require_once 'Input.php';
 //require_once 'Button.php';
 //require_once 'Text.php';
@@ -11,9 +11,28 @@
 //require_once 'PointInterface.php';
 //require_once 'CircleC.php';
 //require_once 'RectangleC.php';
+//
+//require_once 'app/User.php';
+//require_once 'User.php';
 
-require_once 'app/User.php';
-require_once 'User.php';
+//use app\lib\Library;
+
+//ФУНКЦИЯ АВТОЗАГРУЗКИ
+
+function auto_load($class) //функция созданная для автозагрузки
+{
+    $str = str_replace('\\', '/', $class);  //эта строка кода нужна для пространств имён, чтобы заменить слеши, обратный слеш экранируем
+    //echo $str . '.php<br>';
+    require_once $str . '.php';
+}
+
+spl_autoload_register('auto_load');  //функция автозагрузки
+
+//$user = new User();
+//$library = new app\lib\library();
+//$circle = new CircleC(3, 6, 9);
+
+//конец функции автозагрузки
 
 //use app\User; //объявляем, что будем использовать это пространство имён. Подходит , если используется в этом файле только одно пространство имени.
 //$user = new User(); //объявляем тогда без имени пространства
@@ -85,7 +104,13 @@ require_once 'User.php';
 //$c = new Circle(2,4,10);
 //echo $c->area();
 
+//пространство имён
+//$user = new User();
+//echo '<br>';
+//(new app\User());
 
-$user = new User();
-echo '<br>';
-(new app\User());
+
+//TRAIT
+$obj = new Example();
+$obj->run();
+echo $obj;
