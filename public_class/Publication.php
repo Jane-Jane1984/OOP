@@ -1,7 +1,7 @@
 <?php
+namespace public_class;
 
-
-class Publication
+abstract class Publication
 {
     public $title;
     public $description;
@@ -38,8 +38,6 @@ class Publication
         $this->title = $title;
     }
 
-    public function show()
-    {
+   abstract public function show();
 
-    }
 }

@@ -8,6 +8,6 @@ class library
 {
     public function __construct()
     {
-        echo 'app\lib';
+        echo '<br>app\lib';
     }
 }

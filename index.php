@@ -1,4 +1,7 @@
 <?php
+//для PRODUCT
+session_start();
+
 
 //require_once 'Control.php';  //усли нет автозагрузки, первым подключается класс родителя, с автозагрузкой эти подключения не нужны, кроме use
 //
@@ -21,9 +24,13 @@
 
 function auto_load($class) //функция созданная для автозагрузки
 {
-    $str = str_replace('\\', '/', $class);  //эта строка кода нужна для пространств имён, чтобы заменить слеши, обратный слеш экранируем
-    //echo $str . '.php<br>';
-    require_once $str . '.php';
+    $str = $_SERVER['DOCUMENT_ROOT'] . '/';
+    $str .= str_replace('\\', '/', $class);  //эта строка кода нужна для пространств имён, чтобы заменить слеши, обратный слеш экранируем
+    $str .= '.php';
+    //echo $str;
+    if(is_file($str)) {
+        require_once $str;
+    }
 }
 
 spl_autoload_register('auto_load');  //функция автозагрузки
@@ -111,6 +118,21 @@ spl_autoload_register('auto_load');  //функция автозагрузки
 
 
 //TRAIT
-$obj = new Example();
-$obj->run();
-echo $obj;
+//$obj = new Example();
+//$obj->run();
+//echo $obj;
+
+//PRODUCT
+
+//$prod1 = new \classes\cart\Product('apple', 100, 1);
+//$prod2 = new \classes\cart\Product('pine', 300, 6);
+//$prod3 = new \classes\cart\Product('tomato', 450, 2);
+
+$cart = new \classes\cart\Cart();
+//$cart->addToCart($prod1);
+//$cart->addToCart($prod2);
+//$cart->addToCart($prod3);
+
+$cart->getCart();
+
+
