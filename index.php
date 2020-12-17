@@ -128,11 +128,27 @@ spl_autoload_register('auto_load');  //функция автозагрузки
 //$prod2 = new \classes\cart\Product('pine', 300, 6);
 //$prod3 = new \classes\cart\Product('tomato', 450, 2);
 
-$cart = new \classes\cart\Cart();
-//$cart->addToCart($prod1);
-//$cart->addToCart($prod2);
-//$cart->addToCart($prod3);
+//$cart = new \classes\cart\Cart();
+////$cart->addToCart($prod1);
+////$cart->addToCart($prod2);
+////$cart->addToCart($prod3);
+//
+//$cart->getCart();
 
-$cart->getCart();
+//TOWNS
+
+$town1 = new \classes\towns\Town('Минск', 1067, 2018281);
+$town2 = new \classes\towns\Town('Хабаровск', 1625, 8405837);
+$town3 = new \classes\towns\Town('Нью-Йорк', 1880,  616372);
+$town4 = new \classes\towns\Town('Город', 1000, 20000);
+
+$country = new \classes\towns\Country();
+$country->addTown($town1);
+$country->addTown($town2);
+$country->addTown($town3);
+$country->addTown($town4);
+
+$country->getCountryList();
+
 
 
