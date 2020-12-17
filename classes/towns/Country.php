@@ -9,7 +9,7 @@ class Country
 
     public function __construct()
     {
-        if(!empty($_SESSION['country'])){
+        if(!empty($_SESSION['country'])  && $_SESSION['country'] = []){
             foreach ($_SESSION['country'] as $item){
                 $this->listTown[] = unserialize($_SESSION[$item]);
             }

@@ -1,6 +1,6 @@
 <?php
 //для PRODUCT
-session_start();
+//session_start();
 
 
 //require_once 'Control.php';  //усли нет автозагрузки, первым подключается класс родителя, с автозагрузкой эти подключения не нужны, кроме use
@@ -137,18 +137,43 @@ spl_autoload_register('auto_load');  //функция автозагрузки
 
 //TOWNS
 
-$town1 = new \classes\towns\Town('Минск', 1067, 2018281);
-$town2 = new \classes\towns\Town('Хабаровск', 1625, 8405837);
-$town3 = new \classes\towns\Town('Нью-Йорк', 1880,  616372);
-$town4 = new \classes\towns\Town('Город', 1000, 20000);
+//$town1 = new \classes\towns\Town('Минск', 1067, 2018281);
+//$town2 = new \classes\towns\Town('Хабаровск', 1625, 8405837);
+//$town3 = new \classes\towns\Town('Нью-Йорк', 1880,  616372);
+//$town4 = new \classes\towns\Town('Город', 1000, 20000);
+//
+//$country = new \classes\towns\Country();
+//$country->addTown($town1);
+//$country->addTown($town2);
+//$country->addTown($town3);
+//$country->addTown($town4);
+//
+//$country->getCountryList();
 
-$country = new \classes\towns\Country();
-$country->addTown($town1);
-$country->addTown($town2);
-$country->addTown($town3);
-$country->addTown($town4);
+//EXTENSION
 
-$country->getCountryList();
+$mysql = new mysqli('localhost', 'root', '', 'test'); //подключаемся к базе, возвращается объект
 
+if ($mysql->connect_error) {
+    die('Ошибка подключения (' . $mysql->connect_errno . ') '
+        . $mysql->connect_error);
+}
+
+$res = $mysql->query("SELECT * FROM `users`"); //выполняет запрос, возвращает объект запроса
+
+//print_r($res->fetch_assoc());//возвращает первую найденную запись, указатель сдвинется на следующую запись. Возвращается ассоциативный массив
+//echo '<br>';
+
+//цикл возвращает запись. пока не вернёт null
+while ($arRes = $res->fetch_assoc()){
+    echo '<pre>';
+    print_r($arRes);
+    echo '</pre>';
+}
+
+$user = new User($mysql, 'Fedya', '123321');
+//$user->addUser();
+
+echo $user->update(1, ['login' => 'Jane', 'password' => '777']);
 
 
